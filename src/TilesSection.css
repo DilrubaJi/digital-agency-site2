@@ -1,0 +1,48 @@
+/* TileSection.css */
+.tile-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Adjust the space between tiles */
+    padding: 20px;
+    /* Padding around the tile section */
+}
+
+.tile {
+    width: 200px;
+    /* Width of each tile, adjust as needed */
+    border: 1px solid #ddd;
+    /* Border around each tile */
+    border-radius: 8px;
+    /* Rounded corners for the tiles */
+    overflow: hidden;
+    /* Ensures the content fits within the tile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}
+
+.tile img {
+    width: 100%;
+    /* Ensure the image covers the tile width */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove any extra space below the image */
+}
+
+.tile-title {
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    /* Light background for the title */
+    font-weight: bold;
+    /* Make the title stand out */
+}
